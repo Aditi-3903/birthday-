@@ -1,0 +1,331 @@
+ *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(to top right, #ffe6e6, #ffccff);
+      text-align: center;
+      /* overflow: hidden; */
+      scroll-behavior: smooth;
+    }
+
+    h1 {
+      margin-top: 50px;
+      font-size: 3rem;
+      color: #d10068;
+      text-shadow: 2px 2px #fff;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #333;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+
+    /* .cta-button {
+      background-color: #ed4f9e;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border-radius: 50px;
+      box-shadow: 0 10px 30px rgba (255,107, 107, 0.3);
+      opacity: 1;
+      cursor: pointer;
+      transition:all  0.3s ease; 
+     animation :1s ease 5s forwords;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(255,107,107,0.4);
+      background:linear-gradient(45deg,#ff5555,#ff7777);
+
+    }
+
+    .gallary-section {
+       padding: 100px 0;
+       background:linear-gradient(100deg,#fff5f5 0%,#fef7f7 100%) ;
+    
+
+    }
+
+    .container{
+      max-width: 1200px;
+      margin: 0 auto;
+      padding:0 20px;
+    }
+    .section-title{
+      font-family: 'Dancing Script',cursive;
+      font-size: (2.5rem,5vw,4rem);
+      color: #8b3a3a;
+      text-align: center;
+      margin: 20px;
+      opacity: 1;
+      transform: translateY(50px);
+      transition: all 0.6s,ease;
+    }
+    .section-title.aos-animate{
+      opacity: 1;
+      transform: translateY(0);
+      
+
+    }
+
+    .gallary-grid{
+      /* display: grid;
+    
+      grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+      gap: 30px;
+      padding: 20px 0; 
+     
+    }
+    
+    .photo-card{
+      opacity: 1;
+      transform: translateY(50px);
+      transition: all 0.6s,ease;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      height: 200px;
+      width: 200px;
+    
+
+    }
+
+    .photo-card.aos-animate{
+      opacity: 1;
+      transform: translateY(0);
+
+
+    }
+    .photo-container img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .photo-container:hover img{
+      transform: scale(1.1) rotate(2deg);
+    }
+    .photo-overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom,transperent 0%,rgba(0,0,0,0.7)100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+
+    }
+    .photo-container:hover .photo-overlay{
+      opacity: 1;
+    }
+    .photo-caption{
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 10px;
+      transform: translateY(20px);
+      transition: transform 0.3s ease 0.1s;
+
+    }
+    .photo-container:hover.photo-caption{
+      transform: translateY(0);
+
+    }
+    .like-btn{
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1,5rem;
+      cursor: pointer;
+      align-self: flex-end;
+       transition: transform 0.3s ease;
+    }
+    .like-btn:hover{
+      transform: scale(1.2);
+
+    }
+    .like-btn.liked.heart-icon{
+      color: #ff6b6b;
+
+    } */
+
+    .massage-section{
+      padding: 100px 0;
+      background: linear-gradient(135deg,#667eea 0%, #764ba2 100%);
+      color: white;
+
+    }
+
+    .massage-card{
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(20px);
+      border-radius: 30px;
+      padding: 60px 40px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .massage-title{
+      font-family: 'Dancing Script', cursive;
+      font-size: 2rem,4vw,3rem;
+      margin-bottom: 40px;
+      color: rgb(125, 26, 26);
+
+    }
+    .massage-text{
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      opacity: 0;
+       transform: translateY(30px);
+       transition: all 0.6s ease;
+
+    }
+
+    .massage-text.fade-in-animate{
+      opacity: 1;
+       transform: translateY(0);
+    }
+
+    .massage-hearts{
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+    }
+
+    .heart-animation{
+      font-size: 2rem;
+      animation: heartbeat 1.5s ease-in-out infinite;
+
+    }
+    .heart-animation:nth-child(1){
+      animation-delay: 0s;
+    }
+    .heart-animation:nth-child(2){
+      animation-delay: 0.3s;
+    }
+    .heart-animation:nth-child(3){
+      animation-delay: 0.5s;
+    }
+
+    @keyframes heartbeat{
+      0%,
+      100%{
+        transform: scale(1);
+
+      }
+      25%{
+        transform: scale(1.2);
+      }
+      50%{
+        transform: scale(1.1);
+      }
+    }
+
+    .footer{
+      background: #ea97c2;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+    }
+
+    /* .fade-in{
+      opacity: 0;
+      animation:fadeInUp 1s ease forwords;
+    }
+    @keyframes fadeInUp{
+      from{
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to{
+        opacity: 1;
+        transform: translateY(0);
+      }
+    } */
+    .slider{
+        margin:20px auto;
+         padding: 50px 10px;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+         max-width: 600px;
+        box-sizing: border-box;
+        border-radius: 30px;
+        object-fit: fill ;
+         box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+          border: 1px solid rgba(255,255,255,0.2);
+           animation:bounce 1s ease-in-out;
+          
+     }
+     
+
+     
+    
+    img{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        width: 190px;
+        height:200px;
+        object-fit:contain;
+       
+         transform:translateY(30px);
+         transition: all 0.6s ease-in-out;
+        
+     }
+     @keyframes bounce{
+      from{
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to{
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+     
+    h2{
+        font-family: 'Dancing Script',cursive;
+         color: #8b3a3a;
+    }
+
+
+
+    /* .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #ff66b2;
+      animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+   */
